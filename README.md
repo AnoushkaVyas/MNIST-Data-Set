@@ -10,6 +10,9 @@ are for training and 1000 are for testing.
 - Majority vote based classification using Logistic Regression
 - Support Vector Machine
 - MLP Classifier
+- Autoencoders
+- MLP Classifier with Autoencoder
+- K-means
 
 #### Accuracies Obtained from the above methods
 * Softmax has an accuracy of 88.7 percent on the test data.
@@ -28,3 +31,6 @@ are for training and 1000 are for testing.
 
  ![](lcurve.png)
 
+* On MNIST training datset an undercomplete autoencoder was used for feature learning and the "reconstruction error" Vs "hidden neurons" was plotted and analysed for various optimizers like SGD with and without momentum, Adam, RMSProp.
+
+![](adam.png)
