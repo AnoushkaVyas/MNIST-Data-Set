@@ -46,4 +46,6 @@ are for training and 1000 are for testing.
 
 ![](bargraph.png)
 
-* Taking 100 samples of each digit from MNIST, reducing the dimensions to 2 using PCA and applying K-Means with K=10 and plotting the results. Further K-Means used with 5 different random initializations including the ground truth. The goodness of the cluster is calculated using the Adjusted Rand index, Mutual Information and the V measure. The observation is that the value of these measures is very low because the MNIST dataset is not present in clusters.
+* Taking 100 samples of each digit from MNIST, reducing the dimensions to 2 using PCA and applying K-Means with K=10 and plotting the results. Further K-Means used with 5 different random initializations including the ground truth. The goodness of the cluster is calculated using the Adjusted Rand index, Mutual Information and the V measure. The observation is that the value of these measures are very low because the MNIST dataset is not present in clusters.
+
+![](kmeansoutput.jpg)
