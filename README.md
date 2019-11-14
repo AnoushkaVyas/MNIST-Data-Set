@@ -35,3 +35,7 @@ are for training and 1000 are for testing.
 
 ![](adam.png) ![](rms.png)
 ![](sgd_withmomentum.png) ![](sgd_withoutmomentum.png)
+
+* MLP training on MNIST data set for varying learning rates with exponenial annealing and varying initialisation using Pytorch.
+
+![](varyinglr.jpg)
