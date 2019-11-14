@@ -31,12 +31,12 @@ are for training and 1000 are for testing.
 
  ![](lcurve.png)
 
-* On MNIST training datset an undercomplete autoencoder was used for feature learning and the "reconstruction error" Vs "hidden neurons" was plotted and analysed for various optimizers like SGD with and without momentum, Adam, RMSProp.
+* On MNIST training datset an undercomplete autoencoder was used for feature learning and the "reconstruction error" Vs "hidden neurons" was plotted and analysed for various optimizers like SGD with and without momentum, Adam, RMSProp. The structure of encoder uses 2 fully connected layers with ReLU activation and 256 hidden neurons with 64 outputs. The structure of the decoder is similar to encoder with 64 inputs and 256 hidden neurons.
 
 ![](adam.png) ![](rms.png)
 ![](sgd_withmomentum.png) ![](sgd_withoutmomentum.png)
 
-* MLP training on MNIST data set for varying learning rates with exponenial annealing and varying initialisation using Pytorch.
+* MLP training on MNIST data set for varying learning rates with exponenial annealing and varying initialisation using Pytorch.The structure used is two fully connected layers with ReLU and softmax activation respectively with 256 hidden neurons.The minimum reconstruction error is observed with Xavier initialization and learning rate of 0.1.
 
 ![](varyinglr.jpg)
 
@@ -45,3 +45,5 @@ are for training and 1000 are for testing.
 * Using the encoded representation obtained from the trained autoencoder, training the MLP classifier and training with raw pixels and comparing accuracy.
 
 ![](bargraph.png)
+
+* Taking 100 samples of each digit from MNIST, reducing the dimensions to 2 using PCA and applying K-Means with K=10 and plotting the results. Further K-Means used with 5 different random initializations including the ground truth. The goodness of the cluster is calculated using the Adjusted Rand index, Mutual Information and the V measure. The observation is that the value of these measures is very low because the MNIST dataset is not present in clusters.
