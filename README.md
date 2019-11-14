@@ -39,3 +39,9 @@ are for training and 1000 are for testing.
 * MLP training on MNIST data set for varying learning rates with exponenial annealing and varying initialisation using Pytorch.
 
 ![](varyinglr.jpg)
+
+![](varyingweight.jpg)
+
+* Using the encoded representation obtained from the trained autoencoder, training the MLP classifier and training with raw pixels and comparing accuracy.
+
+![](bargraph.png)
