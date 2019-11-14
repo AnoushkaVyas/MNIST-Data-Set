@@ -33,4 +33,5 @@ are for training and 1000 are for testing.
 
 * On MNIST training datset an undercomplete autoencoder was used for feature learning and the "reconstruction error" Vs "hidden neurons" was plotted and analysed for various optimizers like SGD with and without momentum, Adam, RMSProp.
 
-![](adam.png)
+![](adam.png) ![](rms.png)
+![](sgd_withmomentum.png) ![](sgd_withoutmomentum.png)
